@@ -1,0 +1,104 @@
+body {
+    -webkit-touch-callout: none;
+    font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background-color: #f3f3f3;
+    line-height: inherit;
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu
+{display:block} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3{
+    font-weight: 400;
+    font-size: 20px;
+    color: #0c3388;
+    margin: 16px 0 10px 0;
+}
+h4, h5, h6{
+    font-weight: 200;
+    font-size: 16px;
+    color: #0c3388;
+    margin: 16px 0 10px 0;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-bottom: 12px;
+}
+#tpl {
+    display: none;
+}
+@media screen and (min-width: 1025px){
+#manContent {
+    position: relative;
+}
+}
+@media screen and (min-width: 1024px){
+#manContent {
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}}
+.manContent_page {
+    position: relative;
+}
+@media screen and (min-width: 1025px){
+.manContent_page {
+    background-color: #fff;
+    padding-bottom: 100px;
+}}
+@media screen and (min-width: 1024px){
+.manContent_page {
+    min-height: 350px;
+    padding: 20px;
+
+}}
+.manContent_page {
+    padding: 20px;
+    font-size: 16px;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.manContent_page p {
+    color: #0c3388;
+    clear: both;
+    min-height: 1em;
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+.manContent_page * {
+    max-width: 100%!important;
+    box-sizing: border-box!important;
+    -webkit-box-sizing: border-box!important;
+    word-wrap: break-word!important;
+}
+.manContent_page .imgs{
+    text-align: center;
+}
+#img_2{
+    text-align: center;
+}
+#img_6{
+    height: 33px;
+    width: 35px;
+}
+#img_9{
+    height: 36px;
+    width: 35px;
+}
+#img_11{
+    height: 32px;
+    width: 35px;
+}
+#img_14{
+    height: 34px;
+    width: 31px;
+}
