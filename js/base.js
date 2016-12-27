@@ -1,7 +1,6 @@
 var umVersion="0.2"
     var hash = window.location.hash;
     var language = hash.split("#")[1];
-    alert(language)
     var langArr=["en","fr","es","es-rES","es-rMX","es-419"];
     if($.inArray(language, langArr) === -1) {
       language = "en";
