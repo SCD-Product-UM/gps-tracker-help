@@ -9,5 +9,6 @@ var umVersion="0.2"
     if(language=="es-rES"||language=="es-rMX"||language=="es-419"){
       language="es";
     }
-    window.location.replace("http://www.alcatel-move.com/tracker/help/pdfjs/web/viewer.html?file=GPS_Tracker_UM_"+language+".pdf?"+umVersion)
-    //window.location.replace("http://127.0.0.1:9096/pdfjs/web/viewer.html?file=GPS_Tracker_UM_"+language+".pdf?"+umVersion)
+    var domainUrl = "http://www.alcatel-move.com/tracker/help";
+    //var domainUrl = "http://127.0.0.1:9096";    
+    window.location.replace(domainUrl+"/pdfjs/web/viewer.html?file=GPS_Tracker_UM_"+language+".pdf?"+umVersion)
