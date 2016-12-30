@@ -1,9 +1,9 @@
 var umVersion = "0.2"
 //var testUrl = "http://www.alcatel-move.com/tracker/help/index.html&version=latam#en"
 var href = window.location.href;
-var isLatamVersion = false;
-if (href.indexOf("version=latam") > -1) {
-  isLatamVersion = true;
+var isLatamVersion = true;
+if (href.indexOf("version=general") > -1) {
+  isLatamVersion = false;
 }
 var hash = window.location.hash;
 var language = hash.split("#")[1];
