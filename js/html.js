@@ -7,7 +7,7 @@ if (href.indexOf("version=general") > -1) {
 }
 var hash = window.location.hash;
 var language = hash.split("#")[1];
-var langArr = ["en", "fr", "es", "es-rES", "es-rMX", "es-419"];
+var langArr = ["en", "fr", "es", "es-rES", "es-rMX", "es-419", "hu"];
 if ($.inArray(language, langArr) === -1) {
   language = "en";
 }
