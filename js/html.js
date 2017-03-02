@@ -19,7 +19,7 @@ if (language == "es-rES" || language == "es-rMX" || language == "es-419") {
 var domainUrl = "http://www.alcatel-move.com/tracker/help";
 //var domainUrl = "http://127.0.0.1:9096";
 if(isLatamVersion){
-  if(language=="en_US"||language=="en-US"||language=="en-us"||language=="en_us"){
+  if(language=="en_US"||language=="en-US"||language=="en-us"||language=="en_us"||language=="en"||language=="en-rUS"){
     window.location.replace(domainUrl + "/html/en_US/en_US.html?" + umVersion); 
   }else{
     window.location.replace(domainUrl + "/latam.html"+hash); 
