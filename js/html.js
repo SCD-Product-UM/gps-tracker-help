@@ -7,8 +7,9 @@ if (href.indexOf("version=general") > -1) {
 }
 var hash = window.location.hash;
 var language = hash.split("#")[1];
-var langArr = ["en", "fr", "es", "es-rES", "es-rMX", "es-419", "hu", "en_US", "ro", "sk"];
-if ($.inArray(language, langArr) === -1) {
+var langArr = ["en", "fr", "es", "es-rES", "es-rMX", "es-419", "hu", "ro", "sk"];//通用版本
+var latamCurrentList = ["en", "es", "es-rES", "es-rMX", "es-419","en_US","en-US","en-us","en_us"];//latam版本
+if ($.inArray(language, isLatamVersion?latamCurrentList:langArr) === -1) {
   language = "en";
 }
 
@@ -18,7 +19,11 @@ if (language == "es-rES" || language == "es-rMX" || language == "es-419") {
 var domainUrl = "http://www.alcatel-move.com/tracker/help";
 //var domainUrl = "http://127.0.0.1:9096";
 if(isLatamVersion){
-  window.location.replace(domainUrl + "/latam.html"+hash);  
+  if(language=="en_US"||language=="en-US"||language=="en-us"||language=="en_us"){
+    window.location.replace(domainUrl + "/html/en_US/en_US.html?" + umVersion); 
+  }else{
+    window.location.replace(domainUrl + "/latam.html"+hash); 
+  }
 }else{
   window.location.replace(domainUrl + "/html/" + language + "/" + language + ".html?" + umVersion);  
 }    
