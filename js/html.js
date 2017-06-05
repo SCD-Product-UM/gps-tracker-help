@@ -9,7 +9,7 @@ if (href.indexOf("version=general") > -1) {
 }
 var hash = window.location.hash;
 var language = hash.split("#")[1];
-var langArr = ["en", "fr", "es", "es-rES", "es-rMX", "es-419", "hu", "ro", "sk", "tr", "cz","cs"]; //通用版本;cs、cz为捷克语
+var langArr = ["en", "fr", "es", "es-rES", "es-rMX", "es-419", "hu", "ro", "sk", "tr", "cz","cs","ru"]; //通用版本;cs、cz为捷克语
 var latamCurrentList = ["en", "es", "es-rES", "es-rMX", "es-419", "en_US", "en-US", "en-us", "en_us"]; //latam版本
 
 if ($.inArray(language, isLatamVersion ? latamCurrentList : langArr) == -1) {
